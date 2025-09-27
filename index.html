@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sri Interior Designs — Product Showcase</title>
+  <meta name="description" content="InteriorDesign — curated furniture & decor products. Modern, sustainable, and handcrafted pieces." />
+  <link rel="icon" type="image/png" href="assets/css/js/images/icons/favicon.ico.png" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">
+        <img src="assets/css/js/images/logo-dark.jpg" alt="Sri Interior Designs Logo" class="logo-dark site-logo" />
+        <img src="assets/css/js/images/logo-light.jpg" alt="Sri Interior Designs Logo" class="logo-light site-logo" />
+        <span class="brand-text">Sri Interior Designs</span>
+      </a>
+      <nav class="nav">
+        <a href="#gallery">Gallery</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="theme-toggle-container">
+        <label for="theme-toggle" class="theme-toggle-label">Dark Mode</label>
+        <input type="checkbox" id="theme-toggle" />
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1>Designs that make a house feel like home</h1>
+        <p>Handpicked interior pieces for modern living spaces.</p>
+        <a class="btn" href="#gallery">Explore Collection</a>
+      </div>
+    </section>
+
+    <section id="gallery" class="container gallery-section">
+      <div class="gallery-header">
+        <h2>Featured Collection</h2>
+        <div class="filters">
+          <button data-filter="all" class="filter-btn active">All</button>
+          <button data-filter="sofas" class="filter-btn">Sofas</button>
+          <button data-filter="lighting" class="filter-btn">Lighting</button>
+          <button data-filter="decor" class="filter-btn">Decor</button>
+        </div>
+      </div>
+
+      <div id="productGrid" class="grid">
+        <!-- Product card example -->
+        <article class="card" data-category="sofas" tabindex="0">
+          <img src="assets/css/js/images/product1.jpg" alt="Velvet sofa in living room" />
+          <div class="card-body">
+            <h3 class="product-title">Velvet Comfort Sofa</h3>
+            <p class="price">₹24,999</p>
+            <p class="card-excerpt">3-seater, handcrafted, premium velvet.</p>
+            <div class="card-actions">
+              <button class="btn btn-outline view-btn">View</button>
+              <a class="btn" href="mailto:sriinteriordesigns29@example.com?subject=Interested%20in%20Velvet%20Comfort%20Sofa">Enquire</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Duplicate similar cards with different data-category values -->
+        <article class="card" data-category="sofas" tabindex="0">
+          <img src="assets/css/js/images/product2.jpg" alt="Leather recliner in living room" />
+          <div class="card-body">
+            <h3 class="product-title">Luxury Leather Recliner</h3>
+            <p class="price">₹35,499</p>
+            <p class="card-excerpt">Ergonomic, genuine leather, recliner sofa.</p>
+            <div class="card-actions">
+              <button class="btn btn-outline view-btn">View</button>
+              <a class="btn" href="mailto:sriinteriordesigns29@example.com?subject=Interested%20in%20Luxury%20Leather%20Recliner">Enquire</a>
+            </div>
+          </div>
+        </article>
+
+
+      <article class="card" data-category="sofas" tabindex="0">
+          <img src="assets/css/js/images/product_lightning.jpg" alt="Product Lightning sofa in living room" />
+          <div class="card-body">
+            <h3 class="product-title">Product Lightning Sofa</h3>
+            <p class="price">₹28,999</p>
+            <p class="card-excerpt">Stylish, high-back, fast delivery guarantee.</p>
+            <div class="card-actions">
+              <button class="btn btn-outline view-btn">View</button>
+              <a class="btn" href="mailto:sriinteriordesigns29@example.com?subject=Interested%20in%20Product%20Lightning%20Sofa">Enquire</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" data-category="lighting" tabindex="0">
+          <img src="assets/css/js/images/product_light_fixture.jpg" alt="Modern pendant lighting fixture" />
+          <div class="card-body">
+            <h3 class="product-title">Elegant Pendant Light</h3>
+            <p class="price">₹12,499</p>
+            <p class="card-excerpt">Contemporary design, energy-saving LED.</p>
+            <div class="card-actions">
+              <button class="btn btn-outline view-btn">View</button>
+              <a class="btn" href="mailto:sriinteriordesigns29@example.com?subject=Interested%20in%20Elegant%20Pendant%20Light">Enquire</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Modal for product details -->
+    <div id="modal" class="modal" aria-hidden="true">
+      <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <button id="closeModal" class="modal-close" aria-label="Close">&times;</button>
+        <img id="modalImg" src="" alt="" />
+        <div class="modal-body">
+          <h3 id="modalTitle">Product Title</h3>
+          <p id="modalPrice">₹0</p>
+          <p id="modalDesc">Full product description goes here.</p>
+          <a id="modalAction" class="btn" href="#">Enquire</a>
+        </div>
+      </div>
+    </div>
+
+    <section id="about" class="container about-section">
+      <h2>About Us</h2>
+      <p class="about-highlight">
+        <strong>Our Mission:</strong> Transform every space into a reflection of your dreams—balancing beauty, comfort, and individuality.
+      </p>
+      <img src="assets/css/js/images/logo-light.jpg" alt="Sri Interior Designs Logo" class="about-logo" />
+      <ul class="about-list">
+        <li>10+ years of design expertise</li>
+        <li>150+ homes transformed</li>
+        <li>Featured in "Modern Living Magazine"</li>
+      </ul>
+      <blockquote class="about-testimonial">
+        “Sri Interior Designs reimagined our home—stylish, elegant, and uniquely ours.”<br><em>— Happy Client</em>
+      </blockquote>
+      <p class="about-note">
+        We source sustainable materials and love creating custom pieces tailored for your lifestyle.
+      </p>
+    </section>
+
+
+    <section id="contact" class="container contact-section">
+      <h2>Contact</h2>
+      <p class="contact-intro">
+        Reach out for a consultation, project quote, or just to say hello!
+      </p>
+      <form id="contactForm" action="mailto:sriinteriordesigns29@example.com" method="post" enctype="text/plain" class="contact-form">
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <button class="btn" type="submit">Send &rarr;</button>
+      </form>
+      <div class="contact-social">
+        <p>Or reach us on <a href="mailto:sriinteriordesigns29@example.com">Email</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> InteriorDesign • Built by Sri</p>
+    </div>
+  </footer>
+
+  <script src="assets/css/js/main.js"></script>
+</body>
+</html>
+
