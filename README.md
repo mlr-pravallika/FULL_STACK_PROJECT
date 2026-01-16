@@ -13,6 +13,6 @@ How to run locally:
 2. Replace images in `assets/images` with your product photos
 3. Edit copy, prices, and email in the markup
 
-Live demo: https://your-github-username.github.io/interior-showcase
+Live demo: https://mlr-pravallika.github.io/FULL_STACK_PROJECT
 
 Built by: Marri Lalitha Raga Pravallika — https://www.linkedin.com/in/pravallika-marri-73601b351
