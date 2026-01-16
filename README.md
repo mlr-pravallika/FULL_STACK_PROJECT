@@ -15,4 +15,4 @@ How to run locally:
 
 Live demo: https://your-github-username.github.io/interior-showcase
 
-Built by: [Your Name] — link to LinkedIn / Resume
+Built by: Marri Lalitha Raga Pravallika — https://www.linkedin.com/in/pravallika-marri-73601b351
